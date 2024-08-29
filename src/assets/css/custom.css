@@ -1,0 +1,7 @@
+.border-radius{
+  @apply rounded-lg bg-base-100;
+}
+
+.absolute-center{
+  @apply absolute transform translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2;
+}

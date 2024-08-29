@@ -6,13 +6,29 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Nunito'],
+      },
+    },
   },
   plugins: [
     daisyui,
   ],
   daisyui: {
-    themes: ["pastel", "dark"],
+    themes: [
+      {
+        mytheme: {
+          "black": "202224",
+          "primary": "#4880FF",
+          "secondary": "#8280FF",
+          "base-100": "#F5F6FA",
+          "success": "#4AD991",
+          "warning": "#FEC53D",
+          "error": "#FF0000",
+        },
+      }
+    ],
   },
 }
 
