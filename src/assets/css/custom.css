@@ -1,51 +1,51 @@
-@import "animation.css";
+@import 'animation.css';
 
-.border-radius{
+.border-radius {
   @apply rounded-lg bg-base-100;
 }
 
-.absolute-center{
+.absolute-center {
   @apply absolute transform translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2;
 }
 
-.button-primary{
-  @apply text-white bg-primary hover:bg-secondary font-semibold rounded-lg w-full px-5 py-3 text-center; 
+.button-primary {
+  @apply text-white bg-primary hover:bg-secondary font-semibold rounded-lg w-full px-5 py-3 text-center;
 }
 
-.button-secondary{
-  @apply border border-primary hover:border-secondary hover:bg-base-200 font-semibold rounded-lg w-full px-5 py-3 text-center; 
+.button-secondary {
+  @apply border border-primary hover:border-secondary hover:bg-base-200 font-semibold rounded-lg w-full px-5 py-3 text-center;
 }
 
-.link-primary{
+.link-primary {
   @apply text-primary hover:text-secondary underline;
 }
 
-.box-animation{
+.box-animation {
   height: 35rem;
   animation: box-expand 1s forwards;
 }
 
-.item-slide-in{
+.item-slide-in {
   opacity: 0;
   animation: slide-in 1s forwards;
 }
 
-.animate-delay-1{
+.animate-delay-1 {
   animation-delay: 1s;
 }
 
-.animate-delay-2{
+.animate-delay-2 {
   animation-delay: 1.25s;
 }
 
-.animate-delay-3{
+.animate-delay-3 {
   animation-delay: 1.5s;
 }
 
-.animate-delay-4{
+.animate-delay-4 {
   animation-delay: 1.75s;
 }
 
-.animate-delay-5{
+.animate-delay-5 {
   animation-delay: 2s;
 }
