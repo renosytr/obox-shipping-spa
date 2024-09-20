@@ -1,0 +1,12 @@
+{
+  "message": {
+    "auth": {
+      "login": {
+        "title": "Login to Account"
+      },
+      "register": {
+        "title": "Create an Account"
+      }
+    }
+  }
+}

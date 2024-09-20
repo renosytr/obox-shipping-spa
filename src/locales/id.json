@@ -1,0 +1,12 @@
+{
+  "message": {
+    "auth": {
+      "login": {
+        "title": "Login ke Akun Anda"
+      },
+      "register": {
+        "title": "Buat Akun Baru"
+      }
+    }
+  }
+}

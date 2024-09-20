@@ -1,5 +1,6 @@
 @import 'animation.css';
 
+/* Tailwind Directives Start */
 .border-radius {
   @apply rounded-lg bg-base-100;
 }
@@ -16,18 +17,27 @@
   @apply border border-primary hover:border-secondary hover:bg-base-200 font-semibold rounded-lg w-full px-5 py-3 text-center;
 }
 
+.button-base-300 {
+  @apply text-white bg-base-300 !cursor-not-allowed font-semibold rounded-lg w-full px-5 py-3 text-center;
+}
+
 .link-primary {
   @apply text-primary hover:text-secondary underline;
 }
+/* Tailwind Directives End */
 
+/* Animation CSS Start */
 .box-animation {
-  height: 35rem;
   animation: box-expand 1s forwards;
 }
 
 .item-slide-in {
   opacity: 0;
   animation: slide-in 1s forwards;
+}
+
+.animate-delay-half {
+  animation-delay: 0.5s;
 }
 
 .animate-delay-1 {
@@ -49,3 +59,43 @@
 .animate-delay-5 {
   animation-delay: 2s;
 }
+/* Animation CSS End */
+
+/* Custom Style Start */
+.sidebar-menu span {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.sidebar-menu:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar-submenu .bg-submenu {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.sidebar-submenu:hover .bg-submenu {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tooltip::before {
+  color: #fff !important;
+}
+
+/* Custom Style End */
